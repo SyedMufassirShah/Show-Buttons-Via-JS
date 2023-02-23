@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Here In this Test Make 3 Buttions</h1>
+    <h5>By Clicking Button 1 That button should Disapper</h5>
+    <h5>By Clicking Button 2 That button should Disapper</h5>
+    <h5>By Clicking Button 3 Both of the Buttons Should Reappear</h5>
+
+    <button onclick="hide1()" id="hideBtn1">Button 1</button>
+    <button onclick="hide2()" id="hideBtn2">Button 2</button>
+    <button onclick="showBtns()" id="display">Show</button>
+
+
+    <script>
+        function hide1()
+        {
+            document.getElementById("hideBtn1").style['visibility']="hidden";
+        }
+        function hide2()
+        {
+            document.getElementById("hideBtn2").style['visibility']="hidden";
+        }
+        function showBtns()
+        {
+            document.getElementById("hideBtn1").style['visibility']="visible";
+            document.getElementById("hideBtn2").style['visibility']="visible";
+        }
+    </script>
+</body>
+</html>
